@@ -2,19 +2,22 @@
 #include <string.h>
 
 int main() {
-    char str1[100] = "Hello";
-    char str2[100] = "World";
-    char str3[100];
+    char a[64] = "Hello";
+    char b[64] = "world";
+    char c[128];
 
-    strcpy(str3, str1);
-    printf("%s\n", str3);
+    int len = strlen(a);
+    printf("length of a: %d\n", len);
 
-    printf("%d\n", (int)strlen(str1));
+    strcpy(c, a);
+    printf("a: %s, c: %s\n", a, c);
 
-    strcat(str1, str2);
-    printf("%s\n", str1);
+    strcat(c, " ");
+    strcat(c, b);
+    printf("c: %s\n", c);
 
-    printf("%d\n", strcmp(str1, str2));
+    printf("strcmp(%s, %s) = %d\n", a, a, strcmp(a, a));
+    printf("strcmp(%s, %s) = %d\n", a, b, strcmp(a, b));
 
     return 0;
 }
