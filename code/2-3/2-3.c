@@ -9,7 +9,7 @@ int main() {
     strcpy(str3, str1);
     printf("%s\n", str3);
 
-    printf("%lu\n", strlen(str1));
+    printf("%d\n", (int)strlen(str1));
 
     strcat(str1, str2);
     printf("%s\n", str1);
