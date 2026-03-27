@@ -6,13 +6,9 @@ int main() {
     char b[] = "-20";
     char c[] = "3.14";
 
-    int x = atoi(a);
-    int y = atoi(b);
-    double z = atof(c);
-
-    printf("%d\n", x);
-    printf("%d\n", abs(y));
-    printf("%.2f\n", z);
+    printf("%d\n", atoi(a));
+    printf("%d\n", abs(atoi(b)));
+    printf("%.2f\n", atof(c));
 
     return 0;
 }
