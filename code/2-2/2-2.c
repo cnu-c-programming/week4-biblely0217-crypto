@@ -2,17 +2,17 @@
 #include <stdlib.h>
 
 int main() {
-    char a[] = "10";
-    char b[] = "3.14";
-    char c[] = "-20";
+    char int_str1[] = "10";
+    char int_str2[] = "-20";
+    char float_str[] = "3.14";
 
-    int x = atoi(a);
-    double y = atof(b);
-    int z = abs(atoi(c));
+    int a = atoi(int_str1);
+    int b = atoi(int_str2);
+    double c = atof(float_str);
 
-    printf("%d\n", x);   // 10
-    printf("%.2f\n", y); // 3.14
-    printf("%d\n", z);   // 20
+    printf("%d\n", a);           // 10
+    printf("%d\n", abs(b));      // 20
+    printf("%.2f\n", c);         // 3.14
 
     return 0;
 }
