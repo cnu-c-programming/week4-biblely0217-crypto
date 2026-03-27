@@ -2,13 +2,12 @@
 #include <stdlib.h>
 
 int main() {
-    char a[] = "10";
-    char b[] = "-20";
-    char c[] = "3.14";
+    const char* var0 = "-300";
 
-    printf("%d\n", atoi(a));
-    printf("%d\n", abs(atoi(b)));
-    printf("%.2f\n", atof(c));
+    int var1 = atoi(var0);
+    float var2 = atof(var0);
+    int var3 = abs(var1);
 
+    printf("%d %f %d\n", var1, var2, var3);
     return 0;
 }
